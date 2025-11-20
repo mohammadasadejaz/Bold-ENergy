@@ -1,0 +1,19 @@
+<svg width="800" height="450" viewBox="0 0 800 450" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- BOLD text in white -->
+  <text x="50%" y="200"
+        font-family="Quicksand, Arial, sans-serif"
+        font-size="180"
+        font-weight="700"
+        fill="#FFFFFF"
+        text-anchor="middle"
+        letter-spacing="-5">bold</text>
+
+  <!-- ENERGY text in white -->
+  <text x="50%" y="320"
+        font-family="Archivo, Arial, sans-serif"
+        font-size="85"
+        font-weight="600"
+        fill="#FFFFFF"
+        text-anchor="middle"
+        letter-spacing="8">ENERGY</text>
+</svg>
