@@ -6,7 +6,7 @@ const Header = () => {
   return (
     <header className="absolute top-0 left-0 right-0 z-50">
       <nav className="py-6" style={{ paddingLeft: '200px', paddingRight: '200px' }}>
-        <div className="flex justify-between items-center">
+        <div className="flex items-center relative">
           {/* Logo */}
           <Link to="/" className="flex items-center">
             <img
@@ -16,8 +16,8 @@ const Header = () => {
             />
           </Link>
 
-          {/* Navigation Buttons */}
-          <div className="flex space-x-4" style={{ fontFamily: 'Archivo, sans-serif', fontSize: '18px' }}>
+          {/* Navigation Buttons - Centered */}
+          <div className="absolute left-1/2 transform -translate-x-1/2 flex space-x-4" style={{ fontFamily: 'Archivo, sans-serif', fontSize: '18px' }}>
             <Link
               to="/"
               className="px-6 py-2 font-medium hover:bg-white/10 rounded-lg transition-colors duration-300"

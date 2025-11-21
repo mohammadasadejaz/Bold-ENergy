@@ -6,6 +6,7 @@ import HomeOwners from './pages/HomeOwners';
 import CustomerReviews from './pages/CustomerReviews';
 import Blogs from './pages/Blogs';
 import PrivacyPolicy from './pages/PrivacyPolicy';
+import PartnerWithBoldEnergy from './pages/PartnerWithBoldEnergy';
 import './App.css';
 
 function App() {
@@ -20,6 +21,7 @@ function App() {
             <Route path="/customer-reviews" element={<CustomerReviews />} />
             <Route path="/blogs" element={<Blogs />} />
             <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+            <Route path="/partner-with-bold-energy" element={<PartnerWithBoldEnergy />} />
           </Routes>
         </main>
         <Footer />
