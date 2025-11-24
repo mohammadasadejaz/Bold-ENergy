@@ -96,7 +96,7 @@ const StatesWeCover = () => {
 
         {/* Content */}
         <div className="absolute inset-0 flex items-center justify-center" style={{ zIndex: 2 }}>
-          <h1 className="font-bold text-white text-center" style={{ fontFamily: 'Quicksand, sans-serif', fontSize: '75px' }}>
+          <h1 className="font-bold text-white text-center" style={{ fontFamily: 'Quicksand, sans-serif', fontSize: '75px', marginTop: '10px' }}>
             States We Cover
           </h1>
         </div>
@@ -114,8 +114,8 @@ const StatesWeCover = () => {
           </div>
 
           {/* Right - Description */}
-          <div style={{ flex: 1, maxWidth: '550px' }}>
-            <p style={{ fontFamily: 'Archivo, sans-serif', fontSize: '19px', color: '#000000', lineHeight: '1.8' }}>
+          <div style={{ flex: 1, maxWidth: '700px' }}>
+            <p style={{ fontFamily: 'Archivo, sans-serif', fontSize: '20px', color: '#000000', lineHeight: '1.8' }}>
               Bold Energy is headquartered in Connecticut, but our mission is nationwide. We currently serve homeowners and partners across 15+ states — and growing every quarter. With Tier-1 panels, transparent pricing, and flexible financing options, we make it easy for families from New England to the Rockies to take control of their energy future.
             </p>
           </div>
@@ -353,11 +353,71 @@ const StatesWeCover = () => {
 
         {/* Map Image */}
         <div style={{ display: 'flex', justifyContent: 'center' }}>
-          <img
-            src="/map.png.png"
-            alt="Coverage Map"
-            style={{ width: '1158px', height: '748px', objectFit: 'contain' }}
-          />
+          <div style={{ position: 'relative', width: '1158px', height: '748px' }}>
+            <img
+              src="/map.png.png"
+              alt="Coverage Map"
+              style={{ width: '1158px', height: '748px', objectFit: 'contain' }}
+            />
+
+            {/* Green Area Icons (Covered) - Solar Panel Icons */}
+            {/* Colorado */}
+            <img src="/covered.png.png" alt="Covered" style={{ position: 'absolute', width: '25px', height: '25px', top: '230px', left: '280px' }} />
+            {/* Kansas */}
+            <img src="/covered.png.png" alt="Covered" style={{ position: 'absolute', width: '25px', height: '25px', top: '260px', left: '370px' }} />
+            {/* Oklahoma */}
+            <img src="/covered.png.png" alt="Covered" style={{ position: 'absolute', width: '25px', height: '25px', top: '320px', left: '370px' }} />
+            {/* Texas */}
+            <img src="/covered.png.png" alt="Covered" style={{ position: 'absolute', width: '25px', height: '25px', top: '400px', left: '350px' }} />
+            {/* New Mexico */}
+            <img src="/covered.png.png" alt="Covered" style={{ position: 'absolute', width: '25px', height: '25px', top: '330px', left: '260px' }} />
+            {/* Missouri */}
+            <img src="/covered.png.png" alt="Covered" style={{ position: 'absolute', width: '25px', height: '25px', top: '270px', left: '460px' }} />
+            {/* Arkansas */}
+            <img src="/covered.png.png" alt="Covered" style={{ position: 'absolute', width: '25px', height: '25px', top: '340px', left: '450px' }} />
+            {/* Louisiana */}
+            <img src="/covered.png.png" alt="Covered" style={{ position: 'absolute', width: '25px', height: '25px', top: '420px', left: '460px' }} />
+            {/* Kentucky */}
+            <img src="/covered.png.png" alt="Covered" style={{ position: 'absolute', width: '25px', height: '25px', top: '280px', left: '560px' }} />
+            {/* Tennessee */}
+            <img src="/covered.png.png" alt="Covered" style={{ position: 'absolute', width: '25px', height: '25px', top: '310px', left: '540px' }} />
+            {/* North Carolina */}
+            <img src="/covered.png.png" alt="Covered" style={{ position: 'absolute', width: '25px', height: '25px', top: '310px', left: '650px' }} />
+            {/* South Carolina */}
+            <img src="/covered.png.png" alt="Covered" style={{ position: 'absolute', width: '25px', height: '25px', top: '350px', left: '630px' }} />
+            {/* Georgia */}
+            <img src="/covered.png.png" alt="Covered" style={{ position: 'absolute', width: '25px', height: '25px', top: '380px', left: '600px' }} />
+            {/* Florida */}
+            <img src="/covered.png.png" alt="Covered" style={{ position: 'absolute', width: '25px', height: '25px', top: '460px', left: '630px' }} />
+            {/* Virginia */}
+            <img src="/covered.png.png" alt="Covered" style={{ position: 'absolute', width: '25px', height: '25px', top: '275px', left: '670px' }} />
+            {/* Maryland/Delaware */}
+            <img src="/covered.png.png" alt="Covered" style={{ position: 'absolute', width: '25px', height: '25px', top: '245px', left: '700px' }} />
+            {/* New Jersey */}
+            <img src="/covered.png.png" alt="Covered" style={{ position: 'absolute', width: '25px', height: '25px', top: '215px', left: '730px' }} />
+            {/* Connecticut/Mass */}
+            <img src="/covered.png.png" alt="Covered" style={{ position: 'absolute', width: '25px', height: '25px', top: '165px', left: '760px' }} />
+
+            {/* Blue Area Icons (Coming Soon) */}
+            {/* California */}
+            <img src="/comingsoon.png.png" alt="Coming Soon" style={{ position: 'absolute', width: '25px', height: '25px', top: '270px', left: '130px' }} />
+            {/* Minnesota */}
+            <img src="/comingsoon.png.png" alt="Coming Soon" style={{ position: 'absolute', width: '25px', height: '25px', top: '130px', left: '430px' }} />
+            {/* Wisconsin */}
+            <img src="/comingsoon.png.png" alt="Coming Soon" style={{ position: 'absolute', width: '25px', height: '25px', top: '150px', left: '490px' }} />
+            {/* Michigan */}
+            <img src="/comingsoon.png.png" alt="Coming Soon" style={{ position: 'absolute', width: '25px', height: '25px', top: '160px', left: '560px' }} />
+            {/* Illinois */}
+            <img src="/comingsoon.png.png" alt="Coming Soon" style={{ position: 'absolute', width: '25px', height: '25px', top: '230px', left: '500px' }} />
+            {/* Indiana */}
+            <img src="/comingsoon.png.png" alt="Coming Soon" style={{ position: 'absolute', width: '25px', height: '25px', top: '240px', left: '550px' }} />
+            {/* Ohio */}
+            <img src="/comingsoon.png.png" alt="Coming Soon" style={{ position: 'absolute', width: '25px', height: '25px', top: '230px', left: '600px' }} />
+            {/* Pennsylvania */}
+            <img src="/comingsoon.png.png" alt="Coming Soon" style={{ position: 'absolute', width: '25px', height: '25px', top: '200px', left: '670px' }} />
+            {/* New York */}
+            <img src="/comingsoon.png.png" alt="Coming Soon" style={{ position: 'absolute', width: '25px', height: '25px', top: '155px', left: '710px' }} />
+          </div>
         </div>
 
         {/* Bottom Right Rectangle */}
@@ -457,9 +517,9 @@ const StatesWeCover = () => {
                   <img src="/permitspulled.png.png" alt="Permits Pulled" style={{ width: '50px', height: '50px' }} />
                 </div>
               </div>
-              <div style={{ width: '430px', height: '314px', backgroundColor: '#FFFFFF', borderRadius: '12px', padding: '30px', paddingTop: '80px', textAlign: 'center' }}>
-                <h3 style={{ fontFamily: 'Quicksand, sans-serif', fontSize: '22px', fontWeight: 'bold', color: '#000000', marginBottom: '15px' }}>Dealers</h3>
-                <p style={{ fontFamily: 'Archivo, sans-serif', fontSize: '16px', color: '#000000', lineHeight: '1.6', marginBottom: '20px' }}>Apply now to secure exclusive partnerships in new territorie</p>
+              <div style={{ width: '430px', height: '314px', backgroundColor: '#FFFFFF', borderRadius: '12px', padding: '30px', paddingTop: '80px', textAlign: 'center', display: 'flex', flexDirection: 'column', justifyContent: 'space-between', alignItems: 'center' }}>
+                <h3 style={{ fontFamily: 'Quicksand, sans-serif', fontSize: '22px', fontWeight: 'bold', color: '#000000' }}>Dealers</h3>
+                <p style={{ fontFamily: 'Archivo, sans-serif', fontSize: '16px', color: '#000000', lineHeight: '1.6' }}>Apply now to secure exclusive<br />partnerships in new territorie</p>
                 <button style={{
                   backgroundColor: '#A1B502',
                   color: '#FFFFFF',
@@ -487,9 +547,9 @@ const StatesWeCover = () => {
                   <img src="/permitspulled.png.png" alt="Homeowners" style={{ width: '50px', height: '50px' }} />
                 </div>
               </div>
-              <div style={{ width: '430px', height: '314px', backgroundColor: '#FFFFFF', borderRadius: '12px', padding: '30px', paddingTop: '80px', textAlign: 'center' }}>
-                <h3 style={{ fontFamily: 'Quicksand, sans-serif', fontSize: '22px', fontWeight: 'bold', color: '#000000', marginBottom: '15px' }}>Homeowners</h3>
-                <p style={{ fontFamily: 'Archivo, sans-serif', fontSize: '16px', color: '#000000', lineHeight: '1.6', marginBottom: '20px' }}>Check your zip code to see if we serve your area yet</p>
+              <div style={{ width: '430px', height: '314px', backgroundColor: '#FFFFFF', borderRadius: '12px', padding: '30px', paddingTop: '80px', textAlign: 'center', display: 'flex', flexDirection: 'column', justifyContent: 'space-between', alignItems: 'center' }}>
+                <h3 style={{ fontFamily: 'Quicksand, sans-serif', fontSize: '22px', fontWeight: 'bold', color: '#000000' }}>Homeowners</h3>
+                <p style={{ fontFamily: 'Archivo, sans-serif', fontSize: '16px', color: '#000000', lineHeight: '1.6' }}>Check your zip code to see if<br />we serve your area yet</p>
                 <button style={{
                   backgroundColor: '#A1B502',
                   color: '#FFFFFF',

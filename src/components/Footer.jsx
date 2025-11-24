@@ -62,12 +62,12 @@ const Footer = () => {
       <div className="absolute w-full flex justify-center" style={{ top: '875.5px', zIndex: 10 }}>
         <div className="relative" style={{ width: '1350px', height: '789px', backgroundColor: '#FFFFFF', borderRadius: '10px' }}>
           {/* Text Content */}
-          <p className="absolute" style={{ left: '70px', top: '100px', fontFamily: 'Archivo, sans-serif', fontSize: '20px', fontWeight: 'bold', color: '#222222', maxWidth: '400px', paddingRight: '20px', lineHeight: '1.5' }}>
+          <p className="absolute" style={{ left: '80px', top: '150px', fontFamily: 'Archivo, sans-serif', fontSize: '20px', fontWeight: 'bold', color: '#222222', maxWidth: '400px', paddingRight: '20px', lineHeight: '1.5' }}>
             As a national distributor of solar supplies we endeavor provide fast and knowledgeable service, we can get all the materials you need
           </p>
 
           {/* View Office Map */}
-          <div className="absolute flex items-center gap-3" style={{ left: '70px', top: '250px' }}>
+          <div className="absolute flex items-center gap-3" style={{ left: '80px', top: '330px' }}>
             <div className="flex items-center justify-center" style={{ width: '35px', height: '35px', borderRadius: '50%', backgroundColor: '#A1B502' }}>
               <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
                 <path d="M6 3L11 8L6 13" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
@@ -79,10 +79,10 @@ const Footer = () => {
           </div>
 
           {/* Divider Line */}
-          <div className="absolute" style={{ left: '70px', top: '310px', width: '400px', height: '1px', backgroundColor: '#CCCCCC' }}></div>
+          <div className="absolute" style={{ left: '80px', top: '410px', width: '400px', height: '1px', backgroundColor: '#CCCCCC' }}></div>
 
           {/* Contact Information */}
-          <div className="absolute flex flex-col gap-4" style={{ left: '70px', top: '350px' }}>
+          <div className="absolute flex flex-col" style={{ left: '80px', top: '450px', gap: '25px' }}>
             {/* Location */}
             <div className="flex items-center gap-3">
               <img src="/location.png.png" alt="Location" className="w-4 h-6" />
@@ -109,31 +109,22 @@ const Footer = () => {
 
             {/* Contact Us Button */}
             <button
-              className="px-8 py-3 rounded-full text-white font-bold hover:opacity-90 transition-opacity duration-300 flex items-center justify-between mt-4"
-              style={{ fontFamily: 'Poppins, sans-serif', fontSize: '16px', backgroundColor: '#A1B502', width: '320px', height: '50px' }}
+              className="px-8 py-3 rounded-full text-white font-bold hover:opacity-90 transition-opacity duration-300 flex items-center justify-between"
+              style={{ fontFamily: 'Poppins, sans-serif', fontSize: '16px', backgroundColor: '#A1B502', width: '320px', height: '50px', marginTop: '10px' }}
             >
               Contact Us
               <img src="/contactus.png.png" alt="Contact Us" className="w-5 h-5" />
             </button>
-
-            {/* Become a Sales Dealer Button */}
-            <button
-              className="px-8 py-3 rounded-full text-white font-bold hover:opacity-90 transition-opacity duration-300 flex items-center justify-center gap-3 mt-3"
-              style={{ fontFamily: 'Poppins, sans-serif', fontSize: '16px', backgroundColor: '#385887', width: '320px', height: '50px' }}
-            >
-              <img src="/dealer.png.png" alt="Become a Sales Dealer" className="w-6 h-4" />
-              BECOME A SALES DEALER
-            </button>
           </div>
 
           {/* Blue Rectangle - Quote Form */}
-          <div className="absolute flex flex-col" style={{ right: '40px', top: '50%', transform: 'translateY(-50%)', width: '759px', height: '669px', backgroundColor: '#385887', borderRadius: '10px', padding: '40px' }}>
+          <div className="absolute flex flex-col" style={{ right: '60px', top: '50%', transform: 'translateY(-50%)', width: '759px', height: '669px', backgroundColor: '#385887', borderRadius: '10px', padding: '40px' }}>
             {/* Form Header */}
             <p className="mb-2" style={{ fontFamily: 'Archivo, sans-serif', fontSize: '22px', color: '#A1B502' }}>
               Get your free solar estimate today.
             </p>
             <div className="flex items-center gap-4 mb-10">
-              <h3 style={{ fontFamily: 'Flamante-Roma, sans-serif', fontSize: '50px', fontWeight: 'bold', color: '#FFFFFF' }}>
+              <h3 style={{ fontFamily: 'Quicksand, sans-serif', fontSize: '50px', fontWeight: 'bold', color: '#FFFFFF' }}>
                 Request A Quote
               </h3>
               <div style={{ width: '250px', height: '3px', backgroundColor: '#A1B502' }}></div>
@@ -232,14 +223,22 @@ const Footer = () => {
               </div>
             </div>
 
-            {/* Submit Button */}
-            <button
-              className="px-8 py-3 rounded-full text-white font-bold hover:opacity-90 transition-opacity duration-300 flex items-center justify-center gap-2 self-center"
-              style={{ fontFamily: 'Poppins, sans-serif', fontSize: '16px', backgroundColor: '#A1B502' }}
-            >
-              <img src="/dealer.png.png" alt="Dealer" className="w-6 h-5" />
-              GET A FREE QUOTE
-            </button>
+            {/* Submit Buttons */}
+            <div className="flex gap-4 self-center">
+              <button
+                className="px-8 py-3 rounded-full text-white font-bold hover:opacity-90 transition-opacity duration-300 flex items-center justify-center gap-2"
+                style={{ fontFamily: 'Poppins, sans-serif', fontSize: '16px', backgroundColor: '#A1B502' }}
+              >
+                <img src="/dealer.png.png" alt="Dealer" className="w-6 h-5" />
+                GET A FREE QUOTE
+              </button>
+              <button
+                className="px-8 py-3 rounded-full font-bold hover:opacity-90 transition-opacity duration-300 flex items-center justify-center"
+                style={{ fontFamily: 'Poppins, sans-serif', fontSize: '16px', backgroundColor: 'transparent', border: '2px solid #A1B502', color: '#A1B502' }}
+              >
+                BECOME A SALES DEALER
+              </button>
+            </div>
           </div>
         </div>
       </div>
@@ -261,7 +260,7 @@ const Footer = () => {
         </div>
 
         {/* Company Section */}
-        <div className="absolute" style={{ top: '500px', left: 'calc(50% + 50px)', transform: 'translateX(-50%)' }}>
+        <div className="absolute" style={{ top: '490px', left: 'calc(50% - 200px)', transform: 'translateX(-50%)' }}>
           <h4 style={{ fontFamily: 'Archivo, sans-serif', fontSize: '24px', fontWeight: 'bold', color: '#FFFFFF', marginBottom: '15px' }}>
             Company
           </h4>
